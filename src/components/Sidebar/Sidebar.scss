@@ -3,12 +3,17 @@
 .nav {
   box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5);
   background: rgb(255, 255, 255);
+
   .container {
     max-width: 306px;
-    padding: 36px 28px 0;
+    padding: 36px 28px 78px 28px;
     display: flex;
     flex-direction: column;
+    @include tablet {
+      background: rgb(255, 255, 255);
+    }
   }
+
   &__logo {
     margin-bottom: 64px;
     a {
@@ -21,16 +26,22 @@
       line-height: 39px;
       letter-spacing: 1%;
       gap: 8px;
+      @include desktop {
+        font-size: 16rem;
+      }
+      @include tablet {
+        font-size: 12rem;
+      }
     }
     &-text {
       display: flex;
-      align-items: flex-end;
+      align-items: baseline;
       gap: 4px;
       span {
         color: rgb(131, 131, 131);
-        font-size: 10rem;
+        font-size: 10px;
         font-weight: 500;
-        line-height: 15rem;
+        line-height: 15px;
       }
     }
   }
@@ -39,6 +50,7 @@
     display: flex;
     gap: 12px;
     align-items: center;
+    margin-top: 100vh;
     &-text {
       span {
         color: rgb(0, 0, 0);
@@ -56,4 +68,47 @@
       }
     }
   }
+}
+.toggle-sidebar {
+  display: none;
+  @include tablet {
+    display: block;
+    max-width: 24px;
+    font-size: 17px;
+    font-weight: 600;
+    color: adjust-hue($color: #000000, $degrees: 0);
+    background: transparent;
+    margin-left: auto;
+    margin-bottom: 30px;
+  }
+}
+.nav {
+  @include tablet {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: 0;
+    width: 25%;
+    height: 100%;
+    z-index: 20;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+    background: rgb(250, 251, 255);
+  }
+  @include mobile {
+    width: unset;
+  }
+}
+
+.is-hidden {
+  visibility: visible;
+  transition: transform 250ms ease-in-out, visibility 250ms ease-in-out;
+  overflow: scroll;
+}
+
+.nav.is-hidden {
+  transform: translateX(0);
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, visibility 250ms ease-in-out;
 }

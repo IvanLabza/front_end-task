@@ -1,4 +1,4 @@
-export const contact = [
+ const contact = [
   {
     name: "Jane Cooper",
     company: "Microsoft",
@@ -64,3 +64,5 @@ export const contact = [
     status: false,
   },
 ];
+
+export default contact;

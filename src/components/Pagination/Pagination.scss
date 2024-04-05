@@ -1,0 +1,56 @@
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 15px;
+  @include tablet {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &-text {
+    color: rgb(181, 183, 192);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+  }
+
+  .active {
+    border: 1px solid rgb(89, 50, 234);
+    border-radius: 4px;
+    display: block;
+    background: rgb(89, 50, 234);
+    color: rgb(255, 255, 255);
+  }
+  .wraps {
+    display: flex;
+
+    gap: 12px;
+  }
+  &-btn {
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 4px;
+    padding: 6px 9px;
+    display: block;
+    background: rgb(245, 245, 245);
+    color: rgb(64, 75, 82);
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 100%;
+  }
+
+  &-page {
+    color: rgb(64, 75, 82);
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 100%;
+
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 4px;
+    background: rgb(245, 245, 245);
+    padding: 6px 10px;
+  }
+}

@@ -1,0 +1,56 @@
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 20px;
+  &__text {
+    h2 {
+      color: rgb(0, 0, 0);
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 33px;
+    }
+    span {
+      color: rgb(22, 192, 152);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+    }
+  }
+
+
+  &__fields {
+    max-width: 316px;
+    flex-grow: 1;
+    &-label {
+      position: relative;
+      width: 100%;
+      img {
+        position: absolute;
+        top: 7px;
+        left: 8px;
+      }
+    }
+    &-input {
+      width: 100%;
+      border: transparent;
+      outline: transparent;
+      display: block;
+      border-radius: 10px;
+      padding: 10px 0 10px 40px;
+      background: rgb(249, 251, 255);
+      color: rgb(181, 183, 192);
+      font-family: Poppins;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      ::placeholder {
+        color: rgb(181, 183, 192);
+        font-family: Poppins;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+      }
+    }
+  }
+}

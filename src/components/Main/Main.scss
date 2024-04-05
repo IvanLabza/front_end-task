@@ -5,6 +5,10 @@
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 0px;
+  @include tablet {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .nav {
@@ -12,4 +16,49 @@
 }
 .main {
   grid-area: 1 / 2 / 6 / 6;
+  padding: 0 15px;
+}
+
+.main .container {
+  border-radius: 30px;
+  box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5);
+  background: rgb(255, 255, 255);
+  max-width: 968px;
+  margin-left: 71px;
+  margin-bottom: 256px;
+  @include desktop-small {
+    margin: 0 auto;
+  }
+}
+
+.toggle-sidebar__open {
+  span {
+    width: 15px;
+    height: 2px;
+    background-color: rgb(130, 17, 251);
+    display: block;
+    border-radius: 9px;
+    position: relative;
+  }
+
+  span::before {
+    content: "";
+    width: 15px;
+    height: 2px;
+    background-color: blue;
+    display: block;
+    border-radius: 9px;
+    position: absolute;
+    top: 4px;
+  }
+  span::after {
+    content: "";
+    width: 15px;
+    height: 2px;
+    background-color: rgb(115, 0, 255);
+    display: block;
+    border-radius: 9px;
+    position: absolute;
+    bottom: 5px;
+  }
 }

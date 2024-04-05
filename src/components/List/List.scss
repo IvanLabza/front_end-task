@@ -1,0 +1,87 @@
+.contact-list {
+  max-width: 886px;
+  margin: 0 auto;
+  &__row {
+  }
+
+  .Active {
+    color: rgb(0, 135, 103);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    padding: 4px 12px;
+    border: 1px solid rgb(0, 176, 135);
+    border-radius: 4px;
+    background: rgba(22, 192, 152, 0.38);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80px;
+  }
+
+  .Inactive {
+    color: rgb(223, 4, 4);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    padding: 4px 12px;
+    border: 1px solid rgb(223, 4, 4);
+    border-radius: 4px;
+    background: rgb(255, 197, 197);
+    max-width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .row-cell {
+    border-collapse: collapse;
+  }
+  &__header {
+    color: rgb(181, 183, 192);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    padding: 24.5px 0;
+  }
+  &__cell {
+    color: rgb(41, 45, 50);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    padding: 24.5px 18px;
+    border-top: 1px solid rgb(238, 238, 238);
+  }
+}
+
+@include tablet-small {
+  .contact-list {
+    .company {
+    }
+    .phone {
+      display: none;
+    }
+    .email {
+      display: none;
+    }
+    .country {
+    }
+  }
+}
+
+@include mobile  {
+  .contact-list {
+    .company {
+      display: none;
+    }
+    .phone {
+      display: none;
+    }
+    .email {
+      display: none;
+    }
+    .country {
+    }
+  }
+}

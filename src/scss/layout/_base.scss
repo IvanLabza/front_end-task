@@ -39,11 +39,23 @@ body {
   overflow: hidden;
 }
 
+.title {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  margin: 41px 0 51px 71px;
+  @include tablet {
+    margin-top: unset;
+    padding-top: 35px;
+  }
+}
+
 .container {
   max-width: 1920rem;
   width: 100%;
   margin-inline: auto;
-  padding: 0 100rem;
+  padding: 35rem 40rem;
 
   @include desktop-small {
     padding: 50rem;
@@ -51,27 +63,5 @@ body {
 
   @include tablet {
     padding: 40rem;
-  }
-}
-
-.title {
-  color: var(--c-secondery);
-  font: var(--f-title);
-  & span {
-    color: var(--c-primary);
-  }
-}
-
-.desc {
-  color: var(--c-desc);
-  font: var(--f-desc);
-}
-
-.btn {
-  transition: var(--transition);
-  @include hover-on {
-    &:hover {
-      transform: scale(1.1);
-    }
   }
 }
