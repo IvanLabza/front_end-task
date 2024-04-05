@@ -1,0 +1,18 @@
+.nav {
+  .container {
+    max-width: 306px;
+    margin: 0 auto;
+    padding: 36px 28px 0;
+  }
+  &__logo {
+    display: flex;
+    &-text {
+      display: flex;
+    }
+  }
+
+  &__wraps {
+    &-text {
+    }
+  }
+}
