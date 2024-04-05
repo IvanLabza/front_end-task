@@ -1,0 +1,15 @@
+.wrapper {
+  background: rgb(250, 251, 255);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+}
+
+.nav {
+  grid-area: 1 / 1 / 6 / 2;
+}
+.main {
+  grid-area: 1 / 2 / 6 / 6;
+}

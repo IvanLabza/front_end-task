@@ -2,5 +2,31 @@
   &-item {
   }
   &-link {
+    padding: 11px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+    @include hover-on {
+      border-radius: 8px;
+      background: rgb(89, 50, 234);
+      color: white;
+      fill: currentColor;
+    }
+    color: rgb(145, 151, 179);
+    .wraps {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 21px;
+    }
+    .wrap {
+      img {
+        color: currentColor;
+      }
+    }
   }
 }

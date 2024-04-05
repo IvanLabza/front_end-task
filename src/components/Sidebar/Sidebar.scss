@@ -1,18 +1,59 @@
+@import "./SidebarList/SidebarList";
+
 .nav {
+  box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5);
+  background: rgb(255, 255, 255);
   .container {
     max-width: 306px;
-    margin: 0 auto;
     padding: 36px 28px 0;
+    display: flex;
+    flex-direction: column;
   }
   &__logo {
-    display: flex;
+    margin-bottom: 64px;
+    a {
+      display: flex;
+      align-items: center;
+      color: rgb(0, 0, 0);
+      font-family: Poppins;
+      font-size: 20rem;
+      font-weight: 600;
+      line-height: 39px;
+      letter-spacing: 1%;
+      gap: 8px;
+    }
     &-text {
       display: flex;
+      align-items: flex-end;
+      gap: 4px;
+      span {
+        color: rgb(131, 131, 131);
+        font-size: 10rem;
+        font-weight: 500;
+        line-height: 15rem;
+      }
     }
   }
 
   &__wraps {
+    display: flex;
+    gap: 12px;
+    align-items: center;
     &-text {
+      span {
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: 1%;
+      }
+      p {
+        color: rgb(117, 117, 117);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 1%;
+      }
     }
   }
 }

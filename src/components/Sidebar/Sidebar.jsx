@@ -15,13 +15,13 @@ const Sidebar = () => {
               <span>v.01</span>
             </div>
           </a>
-          <SidebarList />
-          <div className="nav__wraps">
-            <img src={item} alt="item" />
-            <div className="nav__wraps-text">
-              <span>Evano</span>
-              <p>Project Manager</p>
-            </div>
+        </div>
+        <SidebarList />
+        <div className="nav__wraps">
+          <img src={item} alt="item" />
+          <div className="nav__wraps-text">
+            <span>Evano</span>
+            <p>Project Manager</p>
           </div>
         </div>
       </div>

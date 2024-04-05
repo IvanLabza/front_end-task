@@ -11,44 +11,71 @@ const SidebarList = () => {
     <ul className="nav__list">
       <li className="nav__list-item">
         <a href="/" className="nav__list-link">
-          <img src={img1} alt="Dashboard" />
-          Dashboard
+          <div className="wraps">
+            <img src={img1} alt="Dashboard" />
+            Dashboard
+          </div>
         </a>
       </li>
       <li className="nav__list-item">
         <a href="/" className="nav__list-link">
-          <img src={img2} alt="Product" />
-          Product
+          <div className="wraps">
+            <img src={img2} alt="Product" />
+            Product
+          </div>
+
+          <div className="wrap">
+            <img src={img7} />
+          </div>
         </a>
-        <img src={img7} alt="" />
       </li>
       <li className="nav__list-item">
         <a href="/" className="nav__list-link">
-          <img src={img3} alt="Customers" />
-          Customers
+          <div className="wraps">
+            <img src={img3} alt="Customers" />
+            Customers
+          </div>
+
+          <div className="wrap">
+            <img src={img7} alt="" />
+          </div>
         </a>
-        <img src={img7} alt="" />
       </li>
       <li className="nav__list-item">
         <a href="/" className="nav__list-link">
-          <img src={img4} alt="Income" />
-          Income
+          <div className="wraps">
+            <img src={img4} alt="Income" />
+            Income
+          </div>
+
+          <div className="wrap">
+            <img src={img7} alt="" />
+          </div>
         </a>
-        <img src={img7} alt="" />
       </li>
       <li className="nav__list-item">
         <a href="/" className="nav__list-link">
-          <img src={img5} alt="Promote" />
-          Promote
+          <div className="wraps">
+            <img src={img5} alt="Promote" />
+            Promote
+          </div>
+
+          <div className="wrap">
+            <img src={img7} alt="" />
+          </div>
         </a>
-        <img src={img7} alt="" />
       </li>
       <li className="nav__list-item">
         <a href="/" className="nav__list-link">
-          <img src={img6} alt="Help" />
-          Help
+          <div className="wraps">
+            <img src={img6} alt="Help" />
+            Help
+          </div>
+
+          <div className="wrap">
+            <img src={img7} alt="" />
+          </div>
         </a>
-        <img src={img7} alt="" />
       </li>
     </ul>
   );

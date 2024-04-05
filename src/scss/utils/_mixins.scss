@@ -47,6 +47,9 @@ $mobile-small: 320px;
 //HOVER
 @mixin hover-on() {
   @media (min-width: 769px) {
+    transition: all 0.3s ease;
+    &:is(:hover, :focus, :active) {
       @content;
+    }
   }
 }
